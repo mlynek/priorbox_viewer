@@ -116,10 +116,10 @@ function toShowBoth() {
 
 function getPriorboxPolygon() {
   var priorbox = priorboxes[document.getElementById("priorbox_number").valueAsNumber]
-  var xmin = priorbox[0] * myImageViewer.image.width;
-  var ymin = priorbox[1] * myImageViewer.image.height;
-  var xmax = priorbox[2] * myImageViewer.image.width;
-  var ymax = priorbox[3] * myImageViewer.image.height;
+  var xmin = priorbox[1] * myImageViewer.image.width;
+  var ymin = priorbox[0] * myImageViewer.image.height;
+  var xmax = priorbox[3] * myImageViewer.image.width;
+  var ymax = priorbox[2] * myImageViewer.image.height;
   return [{x: xmin, y: ymin}, {x: xmax, y: ymin}, {x: xmax, y: ymax}, {x: xmin, y: ymax}, {x: xmin, y: ymin}];
 }
 
